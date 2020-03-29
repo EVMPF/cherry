@@ -1,36 +1,120 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Shiny+登革熱環境因素呈現介面</title>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-        <link rel="stylesheet" href="assets/Semantic-UI/semantic.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <title>Shiny+登革熱環境因素呈現介面</title>
 
-        <script src="./assets/js/jquery-3.1.1.min.js"></script>
-        <script src="./assets/Semantic-UI/semantic.min.js"></script>
-        <script src="./assets/js/index.js"></script>
-    </head>
+    <link rel="stylesheet" href="assets/Semantic-UI/semantic.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
-    <body class="">
+    <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/site.css">
 
-        <div class="ui huge menu">
-            <div class="right menu">
-                <a class="active item">首頁</a>
-                <a class="active item">關於</a>
-            </div>
+    <script src="./assets/js/jquery-3.1.1.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/Semantic-UI/semantic.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</head>
+
+<body class="pushable">
+
+    <nav id="nav" class="ui text menuBk center aligned grid top menu menuFont">
+        <div id="menuIcon1" class="four wide column menuFont">
+            <a href="#home">
+                <h3 class="ui header">首頁</h3>
+            </a>
+        </div>
+        <div id="menuIcon2" class="four wide column">
+            <h3 class="ui header">專題介紹</h3>
         </div>
 
-        <div class="ui container">
-            <div class="ui vertical center aligned">
-                <h2 class="ui header center aligned">
-                    Cherry page
-                </h2>
-            </div>
+        <div id="menuIcon3" class="four wide column">
+            <h3 class="ui header">專題成果</h3>
         </div>
 
+        <div id="menuIcon4" class="four wide column">
+            <h3 class="ui header">關於我們</h3>
+        </div>
+    </nav>
 
-    </body>
+    <!-- Page Contents -->
+
+    <div class="pusher">
+        <a name="home">
+        <div id="topDiv" class="ui vertical center aligned">
+            <div role="img" class="banner banner_rule" aria-label="banner img"></div>
+        </div>
+        </a>
+        <div id="nav2" class="ui text menuBk center aligned grid top menu menuFont">
+            <div id="menuIcon1" class="seven wide column">
+                <a href="http://www.fe.pu.edu.tw/main/3" target="_blank">
+                    <h1 class="ui header">
+                        <img src="./assets/image/home/icon1.png" alt="home">
+                        <div class="content">財工系首頁</div>
+                    </h1>
+                </a>
+            </div>
+
+            <div id="menuIcon2" class="seven wide column">
+                <a href="http://fmathweb4.pu.edu.tw/celebrate/celebrate19/index.htm" target="_blank">
+                    <h1 class="ui header">
+                        <img src="./assets/image/home/icon2.png" alt="home">
+                        <div class="content">19th成果展首頁</div>
+                    </h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="study" class="ui vertical stripe segment">
+        <div class="ui middle center aligned stackable grid container">
+            <div class="ui segment segmentBG">
+                <h1 class="ui header center aligned">
+                    <div class="content">研究動機</div>
+                </h1>
+                <p>
+                    病毒感染最貼近民眾生活卻也是最常被忽視的議題，由於新聞的大肆報導，登革熱疫情引起了我們的注意，故以此來做深入的探討。
+                </p>
+            </div>
+
+            <div class="ui segment segmentBG">
+                <h1 class="ui header center aligned">
+                    <div class="content">研究目的</div>
+                </h1>
+                <p>
+                    透過專題研究登革熱，因此蒐羅各個環境因素以及相關歷史事件，使用R程式語言進行資料處利、繪圖分析及建立Shiny戰情平台，提供使用者能即時查詢資訊的互動式網頁，並建議實施防疫措施的最有效時機點。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <!-- <div id="footer" class="ui vertical footer segment mainColorBg">
+        <div class="ui center align container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+                <div class="ui center aligned eight wide column">
+                    <img id="footerLogo" class="ui fluid image" src="./assets/image/Ww_LOGO-01-01.png" alt="logo">
+                </div>
+                <div class="ui middle aligned eight wide column">
+                    <h4 class="ui left aligned inverted header">台中市 大屯 十八庄迎媽祖 文化協會</h4>
+                    <h4 class="ui left aligned inverted header">Eighteen Villages Mazu Patrol Festival</h4>
+                    <h5 class="ui left aligned inverted header">Mail：<a
+                            href="mailto:taichung18tw@gmail.com">taichung18tw@gmail.com</a></h5>
+                    <h5 class="ui left aligned inverted header">
+                        Copyright ©
+                        <a href="https://www.facebook.com/MazuinEighteenvillages/" target="_blank">
+                            台中市大屯十八庄迎媽祖文化協會
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
 
 </html>

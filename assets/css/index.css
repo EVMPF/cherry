@@ -1,0 +1,70 @@
+/* menu */
+.menuFont h3,
+.menuFont h1 {
+    color: #5569cc !important;
+    font-weight: bold !important;
+}
+.menuBk {
+    background-color: #D0DBF8 !important;
+}
+#topDiv {
+    width: 100%;
+}
+#nav, #nav2{
+    margin: 0 !important;
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+/* banner */
+.banner {
+    background: url("../image/home/banner.png") no-repeat center;
+}
+.banner_rule {
+    width: 100%;
+    /* max-width: 5833px; */
+    /**圖片的寬度不大於圖片實際像素**/
+    height: 0;
+    max-height: 1000px;
+    padding-bottom: 67.14%;
+    /**根據圖片高寬比計算*/
+    margin: 0 auto;
+    background-size: cover;
+}
+.banner .container {
+    padding-top: 2%;
+}
+.ui.huge.header {
+    font-size: 6rem;
+}
+.bannerBtn{
+    margin-left: 2%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* Page Contents */
+.pusher{
+    min-height: 0 !important;
+}
+#study{
+    background-color: #F4E7C7;
+}
+.segmentBG{
+    background-color: #D9F2ED !important;
+    border-radius: 40px !important;
+    padding: 2.5% !important;
+    margin: 2rem !important;
+    width: 100%;
+}
+.segmentBG h1{
+    font-size: 2.5rem !important;
+}
+.segmentBG p{
+    font-size: 1.5rem !important;
+    font-weight: bold;
+}
+.content{
+    white-space:nowrap;
+}
