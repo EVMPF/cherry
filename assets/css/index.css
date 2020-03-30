@@ -20,18 +20,19 @@
 }
 
 .navFixed {
-    z-index: 10;          
-    position: fixed;      
+    z-index: 10;
+    position: fixed;
     top: 0;
     left: 0;
     margin-top: 0;
     min-width: 100%;
     opacity: 0.94;
-    transition: opacity .5s ease-out;   
-  }
+    transition: opacity .5s ease-out;
+}
 
 /* banner */
-.pusher{
+
+.pusher {
     margin-top: 1030;
 }
 
@@ -72,9 +73,7 @@
     min-height: 0 !important;
 }
 
-#study,
-#about,
-#students .card {
+#study, #about, #students .card {
     background-color: #F4E7C7;
 }
 
@@ -95,8 +94,7 @@
     font-weight: bold;
 }
 
-.pusher .content,
-#study .content {
+.pusher .content, #study .content {
     white-space: nowrap;
 }
 
@@ -104,37 +102,39 @@
     display: none;
 }
 
-.ui.vertical.segment{
+.ui.vertical.segment {
     border-bottom: none;
 }
 
 /* about */
-#about .segmentBG{
+
+#about .segmentBG {
     background-color: #F4E7C7 !important;
 }
-#teacherDiv{
+
+#teacherDiv {
     width: 50%;
 }
-#studentHeader{
+
+#studentHeader {
     margin-bottom: 20px;
 }
 
-.ui .card{
+.ui .card {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-.ui.card>.image{
+.ui.card>.image {
     background: #F4E7C7 !important;
 }
 
-.ui.card > .content{
+.ui.card>.content {
     border-top: #F4E7C7;
 }
 
-@media only screen and (min-width: 701px){
-    #student2,
-    #student4{
+@media only screen and (min-width: 701px) {
+    #student2, #student4 {
         margin-top: 20%;
     }
 }
