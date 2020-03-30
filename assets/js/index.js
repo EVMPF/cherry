@@ -12,7 +12,7 @@ $(function () {
 $(document).ready(function () {
     if (screen.width <= 700) {
         document.getElementById('nav').removeAttribute("class");
-        document.getElementById('nav').setAttribute("class", "navFixed ui text menuBk center aligned two column grid top menu menuFont");
+        document.getElementById('nav').setAttribute("class", "ui text menuBk center aligned two column grid top menu menuFont");
         document.getElementById('students').removeAttribute("class");
         document.getElementById('students').setAttribute("class", "ui one column grid");
     }
