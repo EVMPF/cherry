@@ -1,25 +1,44 @@
 /* menu */
-.menuFont h3,
-.menuFont h1 {
+
+.menuFont h3, .menuFont h1 {
     color: #5569cc !important;
     font-weight: bold !important;
 }
+
 .menuBk {
     background-color: #D0DBF8 !important;
 }
+
 #topDiv {
     width: 100%;
 }
-#nav, #nav2{
+
+#nav, #nav2, #nav2Mobile {
     margin: 0 !important;
     padding-top: 1em !important;
     padding-bottom: 1em !important;
 }
 
+.navFixed {
+    z-index: 10;          
+    position: fixed;      
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    min-width: 100%;
+    opacity: 0.94;
+    transition: opacity .5s ease-out;   
+  }
+
 /* banner */
+.pusher{
+    margin-top: 1030;
+}
+
 .banner {
     background: url("../image/home/banner.png") no-repeat center;
 }
+
 .banner_rule {
     width: 100%;
     /* max-width: 5833px; */
@@ -31,40 +50,115 @@
     margin: 0 auto;
     background-size: cover;
 }
+
 .banner .container {
     padding-top: 2%;
 }
+
 .ui.huge.header {
     font-size: 6rem;
 }
-.bannerBtn{
+
+.bannerBtn {
     margin-left: 2%;
     bottom: 0;
     left: 0;
     position: absolute;
 }
 
-/* Page Contents */
-.pusher{
+/* home */
+
+.pusher {
     min-height: 0 !important;
 }
-#study{
+
+#study,
+#about,
+#students .card {
     background-color: #F4E7C7;
 }
-.segmentBG{
+
+.segmentBG {
     background-color: #D9F2ED !important;
-    border-radius: 40px !important;
+    border-radius: 30px !important;
     padding: 2.5% !important;
     margin: 2rem !important;
     width: 100%;
 }
-.segmentBG h1{
+
+.segmentBG h1 {
     font-size: 2.5rem !important;
 }
-.segmentBG p{
+
+.segmentBG p {
     font-size: 1.5rem !important;
     font-weight: bold;
 }
-.content{
-    white-space:nowrap;
+
+.pusher .content,
+#study .content {
+    white-space: nowrap;
+}
+
+#nav2Mobile {
+    display: none;
+}
+
+.ui.vertical.segment{
+    border-bottom: none;
+}
+
+/* about */
+#about .segmentBG{
+    background-color: #F4E7C7 !important;
+}
+#teacherDiv{
+    width: 50%;
+}
+#studentHeader{
+    margin-bottom: 20px;
+}
+
+.ui .card{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui.card>.image{
+    background: #F4E7C7 !important;
+}
+
+.ui.card > .content{
+    border-top: #F4E7C7;
+}
+
+@media only screen and (min-width: 701px){
+    #student2,
+    #student4{
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #nav {
+        white-space: nowrap;
+    }
+    #nav #menuIcon1, #nav #menuIcon2, #nav #menuIcon3, #nav #menuIcon4 {
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+    #nav2 {
+        display: none;
+    }
+    #nav2Mobile {
+        display: block;
+    }
+    #nav2Mobile #menuIcon1, #nav2Mobile #menuIcon2 {
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        white-space: nowrap;
+    }
 }

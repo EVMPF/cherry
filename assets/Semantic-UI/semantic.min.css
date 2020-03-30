@@ -18154,7 +18154,6 @@
          border-top: 1px solid rgba(255, 255, 255, .1)
      }
      .ui.stackable.celled.grid>.column:not(.row), .ui.stackable.celled.grid>.row>.column, .ui.stackable.divided:not(.vertically).grid>.column:not(.row), .ui.stackable.divided:not(.vertically).grid>.row>.column {
-         border-top: 1px solid rgba(34, 36, 38, .15);
          -webkit-box-shadow: none!important;
          box-shadow: none!important;
          padding-top: 2rem!important;
