@@ -44,7 +44,7 @@
     width: 100%;
     /* max-width: 5833px; */
     /**圖片的寬度不大於圖片實際像素**/
-    height: 0;
+    /* height: 0; */
     max-height: 1000px;
     padding-bottom: 67.14%;
     /**根據圖片高寬比計算*/
@@ -73,7 +73,7 @@
     min-height: 0 !important;
 }
 
-#study, #about, #students .card {
+#study, #about, #students .card, #introduce {
     background-color: #F4E7C7;
 }
 
@@ -133,6 +133,61 @@
     border-top: #F4E7C7;
 }
 
+/* introduce */
+
+.introduceImg {
+    margin: 5%;
+}
+
+#introduce .banner_rule {
+    padding-bottom: 0% !important;
+}
+
+.caret {
+    border-top: none !important;
+    color: #777FE2;
+}
+
+#introduce .segmentBG {
+    background-color: #F6E1DD !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#introduce .segment {
+    border-color: #C2D5E8;
+}
+
+#kitUse {
+    background-color: #F6E1DD !important;
+    border-radius: 30px !important;
+    padding: 2.5% !important;
+    /* margin: 2rem !important; */
+    width: 100%;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+}
+
+#leaflet, #ggplot, #SHINY {
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+}
+
+#platform {
+    padding: 2rem;
+}
+
+/* footer */
+
+#footer {
+    background-color: #D0DBF8;
+    padding: 2rem;
+}
+
+#footer h3 {
+    color: #5569cc;
+}
+
 @media only screen and (min-width: 701px) {
     #student2, #student4 {
         margin-top: 20%;
@@ -160,5 +215,11 @@
         margin-top: 5%;
         margin-bottom: 5%;
         white-space: nowrap;
+    }
+    .segmentBG h1 {
+        font-size: 2rem !important;
+    }
+    .segmentBG p {
+        font-size: 1.3rem !important;
     }
 }

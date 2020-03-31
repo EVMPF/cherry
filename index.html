@@ -1,253 +1,452 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Shiny登革熱環境因素呈現介面</title>
+        <title>Shiny登革熱環境因素呈現介面</title>
 
-    <link rel="stylesheet" href="assets/Semantic-UI/semantic.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/Semantic-UI/semantic.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/site.css">
+        <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/site.css">
 
-    <script src="./assets/js/jquery-3.1.1.min.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./assets/Semantic-UI/semantic.min.js"></script>
-    <script src="./assets/js/index.js"></script>
-</head>
+        <script src="./assets/js/jquery-3.1.1.min.js"></script>
+        <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./assets/Semantic-UI/semantic.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+    </head>
 
-<body class="pushable">
+    <body class="pushable">
 
-    <nav id="nav" class="ui text menuBk center aligned four column grid top menu menuFont">
-        <div class="row">
-            <div id="menuIcon1" class="column">
-                <a href="#home">
-                    <h3 class="ui header">首頁</h3>
-                </a>
-            </div>
-            <div id="menuIcon2" class="column">
-                <h3 class="ui header">專題介紹</h3>
-            </div>
-
-            <div id="menuIcon3" class="column">
-                <h3 class="ui header">專題成果</h3>
-            </div>
-
-            <div id="menuIcon4" class="column">
-                <a href="#about">
-                    <h3 class="ui header">關於我們</h3>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- home -->
-    <a name="home"></a>
-    <div class="pusher">
-        <div id="topDiv" class="ui vertical center aligned">
-            <div role="img" class="banner banner_rule" aria-label="banner img"></div>
-        </div>
-        <div id="nav2" class="ui text menuBk center aligned two column grid top menu menuFont">
+        <nav id="nav" class="ui text menuBk center aligned four column grid top menu menuFont">
             <div class="row">
                 <div id="menuIcon1" class="column">
-                    <a href="http://www.fe.pu.edu.tw/main/3" target="_blank">
-                        <h1 class="ui header">
-                            <img src="./assets/image/home/icon1.png" alt="home">
-                            <div class="content">財工系首頁</div>
-                        </h1>
+                    <a href="#home">
+                        <h3 class="ui header">首頁</h3>
                     </a>
                 </div>
-
                 <div id="menuIcon2" class="column">
-                    <a href="http://fmathweb4.pu.edu.tw/celebrate/celebrate19/index.htm" target="_blank">
-                        <h1 class="ui header">
-                            <img src="./assets/image/home/icon2.png" alt="home">
-                            <div class="content">19th成果展首頁</div>
-                        </h1>
+                    <h3 class="ui header">專題介紹</h3>
+                </div>
+
+                <div id="menuIcon3" class="column">
+                    <h3 class="ui header">專題成果</h3>
+                </div>
+
+                <div id="menuIcon4" class="column">
+                    <a href="#about">
+                        <h3 class="ui header">關於我們</h3>
                     </a>
                 </div>
             </div>
-        </div>
+        </nav>
 
-        <div id="nav2Mobile" class="ui text menuBk left aligned one column grid top menu menuFont">
-            <div class="row">
-                <div id="menuIcon1" class="column">
-                    <a href="http://www.fe.pu.edu.tw/main/3" target="_blank">
-                        <h1 class="ui header">
-                            <img src="./assets/image/home/icon1.png" alt="home">
-                            <div class="content">財工系首頁</div>
-                        </h1>
-                    </a>
-                </div>
-
-                <div id="menuIcon2" class="column">
-                    <a href="http://fmathweb4.pu.edu.tw/celebrate/celebrate19/index.htm" target="_blank">
-                        <h1 class="ui header">
-                            <img src="./assets/image/home/icon2.png" alt="home">
-                            <div class="content">19th成果展首頁</div>
-                        </h1>
-                    </a>
-                </div>
+        <!-- home -->
+        <a name="home"></a>
+        <div class="pusher">
+            <div id="topDiv" class="ui vertical center aligned">
+                <div role="img" class="banner banner_rule" aria-label="banner img"></div>
             </div>
-        </div>
-    </div>
-    <div id="study" class="ui vertical stripe segment">
-        <div id="study" class="ui middle left aligned stackable grid container">
-            <div class="ui segment segmentBG">
-                <h1 class="ui header center aligned">
-                    <div class="content">研究動機</div>
-                </h1>
-                <p>
-                    病毒感染是最貼近民眾生活卻也是最常被忽視的議題，由於新聞的大肆報導，登革熱疫情引起了我們的注意，故以此來做深入的探討。
-                </p>
-            </div>
-
-            <div class="ui segment segmentBG">
-                <h1 class="ui header center aligned">
-                    <div class="content">研究目的</div>
-                </h1>
-                <p>
-                    透過專題研究登革熱，因此蒐羅各個環境因素以及相關歷史事件，使用R程式語言進行資料處理、繪圖分析及建立Shiny戰情平台，提供使用者能即時查詢資訊的互動式網頁，並建議實施防疫措施的最有效時機點。
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- about -->
-    <a name="about"></a>
-    <div id="about" class="ui vertical stripe segment">
-        <div class="ui middle left aligned stackable grid container">
-            <div class="ui segmentBG">
-                <h1 class="ui header center aligned">
-                    <img src="./assets/image/about/boy.png" alt="boyIcon">
-                    <div class="content">指導老師</div>
-                </h1>
-                <div id="footer" class="ui vertical footer segment">
-                    <div class="ui center align container">
-                        <div class="ui stackable inverted divided equal height stackable grid">
-                            <div class="ui nine wide column">
-                                <img id="footerLogo" class="ui centered medium circular image"
-                                    src="./assets/image/about/teacher.png" alt="logo">
-                            </div>
-                            <div class="ui middle aligned seven wide column">
-                                <h2 class="ui left aligned header">● 于昌永 老師</h2>
-                                <h2 class="ui left aligned header">
-                                    ● cyyu@pu.edu.tw
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ui segmentBG">
-                <h1 id="studentHeader" class="ui header center aligned">
-                    <img src="./assets/image/about/girl.png" alt="boyIcon">
-                    <div class="content">團隊成員</div>
-                </h1>
-                <div id="students" class="ui five column grid">
-                    <div class="column">
-                        <div class="ui fluid card">
-                            <div class="image">
-                                <img src="./assets/image/about/student1.png">
-                            </div>
-                            <div class="ui center aligned grid content">
-                                <p class="header">莊星渝</p>
-                                <div class="description">
-                                    s1052285@gm.pu.edu.tw
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="student2" class="column">
-                        <div class="ui fluid card">
-                            <div class="image">
-                                <img src="./assets/image/about/student2.png">
-                            </div>
-                            <div class="ui center aligned grid content">
-                                <p class="header">鄭亞瑄</p>
-                                <div class="description">
-                                    s1050113@gm.pu.edu.tw
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="ui fluid card">
-                            <div class="image">
-                                <img src="./assets/image/about/student3.png">
-                            </div>
-                            <div class="ui center aligned grid content">
-                                <p class="header">林倇聿</p>
-                                <div class="description">
-                                    s1050114@gm.pu.edu.tw
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="student4" class="column">
-                        <div class="ui fluid card">
-                            <div class="image">
-                                <img src="./assets/image/about/student4.png">
-                            </div>
-                            <div class="ui center aligned grid content">
-                                <p class="header">張庭瑄</p>
-                                <div class="description">
-                                    s1052288@gm.pu.edu.tw
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="ui fluid card">
-                            <div class="image">
-                                <img src="./assets/image/about/student5.png">
-                            </div>
-                            <div class="ui center aligned grid content">
-                                <p class="header">陳冠斈</p>
-                                <div class="description">
-                                    s1052290@gm.pu.edu.tw
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- footer -->
-    <!-- <div id="footer" class="ui vertical footer segment mainColorBg">
-        <div class="ui center align container">
-            <div class="ui stackable inverted divided equal height stackable grid">
-                <div class="ui center aligned eight wide column">
-                    <img id="footerLogo" class="ui fluid image" src="./assets/image/Ww_LOGO-01-01.png" alt="logo">
-                </div>
-                <div class="ui middle aligned eight wide column">
-                    <h4 class="ui left aligned inverted header">台中市 大屯 十八庄迎媽祖 文化協會</h4>
-                    <h4 class="ui left aligned inverted header">Eighteen Villages Mazu Patrol Festival</h4>
-                    <h5 class="ui left aligned inverted header">Mail：<a
-                            href="mailto:taichung18tw@gmail.com">taichung18tw@gmail.com</a></h5>
-                    <h5 class="ui left aligned inverted header">
-                        Copyright ©
-                        <a href="https://www.facebook.com/MazuinEighteenvillages/" target="_blank">
-                            台中市大屯十八庄迎媽祖文化協會
+            <div id="nav2" class="ui text menuBk center aligned two column grid top menu menuFont">
+                <div class="row">
+                    <div id="menuIcon1" class="column">
+                        <a href="http://www.fe.pu.edu.tw/main/3" target="_blank">
+                            <h1 class="ui header">
+                                <img src="./assets/image/home/icon1.png" alt="home">
+                                <div class="content">財工系首頁</div>
+                            </h1>
                         </a>
-                    </h5>
+                    </div>
+
+                    <div id="menuIcon2" class="column">
+                        <a href="http://fmathweb4.pu.edu.tw/celebrate/celebrate19/index.htm" target="_blank">
+                            <h1 class="ui header">
+                                <img src="./assets/image/home/icon2.png" alt="home">
+                                <div class="content">19th成果展首頁</div>
+                            </h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav2Mobile" class="ui text menuBk left aligned one column grid top menu menuFont">
+                <div class="row">
+                    <div id="menuIcon1" class="column">
+                        <a href="http://www.fe.pu.edu.tw/main/3" target="_blank">
+                            <h1 class="ui header">
+                                <img src="./assets/image/home/icon1.png" alt="home">
+                                <div class="content">財工系首頁</div>
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div id="menuIcon2" class="column">
+                        <a href="http://fmathweb4.pu.edu.tw/celebrate/celebrate19/index.htm" target="_blank">
+                            <h1 class="ui header">
+                                <img src="./assets/image/home/icon2.png" alt="home">
+                                <div class="content">19th成果展首頁</div>
+                            </h1>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+        <div id="study" class="ui vertical stripe segment">
+            <div id="study" class="ui middle left aligned stackable grid container">
+                <div class="ui segment segmentBG center aligned grid">
+                    <h1 class="ui header">
+                        <div class="content">研究動機</div>
+                    </h1>
+                    <p align="left">
+                        病毒感染是最貼近民眾生活卻也是最常被忽視的議題，由於新聞的大肆報導，登革熱疫情引起了我們的注意，故以此來做深入的探討。
+                    </p>
+                </div>
 
-</body>
+                <div class="ui segment segmentBG center aligned grid">
+                    <h1 class="ui header">
+                        <div class="content">研究目的</div>
+                    </h1>
+                    <p align="left">
+                        透過專題研究登革熱，因此蒐羅各個環境因素以及相關歷史事件，使用R程式語言進行資料處理、繪圖分析及建立Shiny戰情平台，提供使用者能即時查詢資訊的互動式網頁，並建議實施防疫措施的最有效時機點。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- about -->
+        <a name="about"></a>
+        <div id="about" class="ui vertical stripe segment">
+            <div class="ui middle left aligned stackable grid container">
+                <div class="ui segmentBG">
+                    <h1 class="ui header center aligned">
+                        <img src="./assets/image/about/boy.png" alt="boyIcon">
+                        <div class="content">指導老師</div>
+                    </h1>
+                    <div class="ui vertical segment">
+                        <div class="ui center align container">
+                            <div class="ui stackable inverted divided equal height stackable grid">
+                                <div class="ui nine wide column">
+                                    <img class="ui centered medium circular image"
+                                        src="./assets/image/about/teacher.png" alt="logo">
+                                </div>
+                                <div class="ui middle aligned seven wide column">
+                                    <h2 class="ui left aligned header">● 于昌永 老師</h2>
+                                    <h2 class="ui left aligned header">
+                                        ● cyyu@pu.edu.tw
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui segmentBG">
+                    <h1 id="studentHeader" class="ui header center aligned">
+                        <img src="./assets/image/about/girl.png" alt="boyIcon">
+                        <div class="content">團隊成員</div>
+                    </h1>
+                    <div id="students" class="ui five column grid">
+                        <div class="column">
+                            <div class="ui fluid card">
+                                <div class="image">
+                                    <img src="./assets/image/about/student1.png">
+                                </div>
+                                <div class="ui center aligned grid content">
+                                    <p class="header">莊星渝</p>
+                                    <div class="description">
+                                        s1052285@gm.pu.edu.tw
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="student2" class="column">
+                            <div class="ui fluid card">
+                                <div class="image">
+                                    <img src="./assets/image/about/student2.png">
+                                </div>
+                                <div class="ui center aligned grid content">
+                                    <p class="header">鄭亞瑄</p>
+                                    <div class="description">
+                                        s1050113@gm.pu.edu.tw
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui fluid card">
+                                <div class="image">
+                                    <img src="./assets/image/about/student3.png">
+                                </div>
+                                <div class="ui center aligned grid content">
+                                    <p class="header">林倇聿</p>
+                                    <div class="description">
+                                        s1050114@gm.pu.edu.tw
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="student4" class="column">
+                            <div class="ui fluid card">
+                                <div class="image">
+                                    <img src="./assets/image/about/student4.png">
+                                </div>
+                                <div class="ui center aligned grid content">
+                                    <p class="header">張庭瑄</p>
+                                    <div class="description">
+                                        s1052288@gm.pu.edu.tw
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui fluid card">
+                                <div class="image">
+                                    <img src="./assets/image/about/student5.png">
+                                </div>
+                                <div class="ui center aligned grid content">
+                                    <p class="header">陳冠斈</p>
+                                    <div class="description">
+                                        s1052290@gm.pu.edu.tw
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- introduce -->
+        <div id="introduce" class="ui vertical stripe segment">
+            <div class="ui middle left aligned stackable grid container">
+                <div>
+                    <div class="introduceImg">
+                        <img class="ui centered big image" src="./assets/image/introduce/introduce@2x.png"
+                            alt="introduce">
+                    </div>
+                    <div class="ui vertical segment">
+                        <img class="ui image banner_rule" src="./assets/image/introduce/架構圖.PNG" alt="架構圖">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="introduceImg">
+                        <img class="ui centered big image" src="./assets/image/introduce/bypass.png" alt="introduce">
+                    </div>
+
+                    <h1 class="ui header center aligned">
+                        <i class="caret up icon"></i>
+                        <div class="content">資料收集</div>
+                    </h1>
+                    <div class="ui segment segmentBG center aligned grid">
+                        <h1 class="ui header center aligned">
+                            <div class="content">爬蟲技術</div>
+                        </h1>
+                        <p align="left">
+                            在下載觀測站資料時，因年份及觀測站數量龐大，故利用google的SelectorGadget擴充套件，以及RStudio的read.html指令進行較有效率的資料下載，並且挑出所需要使用的觀測站因素。
+                        </p>
+                    </div>
+
+                    <h1 class="ui header center aligned">
+                        <i class="caret up icon"></i>
+                        <div class="content">資料整合</div>
+                    </h1>
+                    <div class="ui segment segmentBG center aligned grid">
+                        <h1 class="ui header center aligned">
+                            <div class="content">資料庫</div>
+                        </h1>
+                        <p align="left">
+                            透過政府相關網站蒐集大量數據資料，經過和Linux端繁雜的連
+                            結後，並明確設定變數名稱及屬性建立完善資料庫系統，以便後續能有效的查詢。.html指令進行較有效率的資料下載，並且挑出所需要使用的觀測站因素。
+                        </p>
+                    </div>
+
+                    <h1 class="ui header center aligned">
+                        <i class="caret up icon"></i>
+                        <div class="content">套件使用</div>
+                    </h1>
+                    <div id="kitUse" class="ui segment segmentBG center aligned grid">
+                        <h1 class="ui header center aligned">
+                            <div class="content">LEAFLET</div>
+                        </h1>
+                        <div id="leaflet" class="ui vertical stripe segment">
+                            <div id="leafletCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- 輪播指標 -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#leafletCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#leafletCarousel" data-slide-to="1"></li>
+                                    <li data-target="#leafletCarousel" data-slide-to="2"></li>
+                                </ol>
+                                <!-- 輪播照片 -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <a>
+                                            <img class="ui rounded image"
+                                                src="./assets/image/introduce/leaflet/leaflet - 1.png" alt="leaflet">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a>
+                                            <img class="ui rounded image"
+                                                src="./assets/image/introduce/leaflet/leaflet - 2.png" alt="leaflet">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a>
+                                            <img class="ui rounded image"
+                                                src="./assets/image/introduce/leaflet/leaflet - 3.png" alt="leaflet">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 輪播左右箭頭 -->
+                                <a id="carouselAngle" class="left carousel-control" href="#leafletCarousel"
+                                    role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a id="carouselAngle" class="right carousel-control" href="#leafletCarousel"
+                                    role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <p>
+                            Leaflet是R裡面的套件，也是網頁互動式地圖的繪製工具之一，
+                            在專題上用於查看登革熱病例的分佈狀況，主要以聚合圖為呈現
+                            方式。
+                        </p>
+                    </div>
+
+                    <div id="kitUse" class="ui segment segmentBG center aligned grid">
+                        <h1 class="ui header center aligned">
+                            <div class="content">GGPLOT</div>
+                        </h1>
+                        <div id="ggplot" class="ui vertical stripe segment">
+                            <div id="ggplotCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- 輪播指標 -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#ggplotCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#ggplotCarousel" data-slide-to="1"></li>
+                                </ol>
+                                <!-- 輪播照片 -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <a>
+                                            <img class="ui fluid rounded image"
+                                                src="./assets/image/introduce/ggplot/ggplot - 1.jpg" alt="leaflet">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a>
+                                            <img class="ui fluid rounded image"
+                                                src="./assets/image/introduce/ggplot/ggplot - 2.jpg" alt="leaflet">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 輪播左右箭頭 -->
+                                <a id="carouselAngle" class="left carousel-control" href="#ggplotCarousel" role="button"
+                                    data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a id="carouselAngle" class="right carousel-control" href="#ggplotCarousel"
+                                    role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <p>
+                            在傳統的繪圖工具上，只能繪製一些固定的圖形，無法加入其他
+                            繪圖物件，因此選用ggplot來呈現，可以依照自己的需求組合各
+                            種圖形組件、任意調整圖形，產生各種變化，因此在繪圖上能畫
+                            出更有彈性、更高階的圖形。
+                        </p>
+                    </div>
+
+                    <div id="kitUse" class="ui segment segmentBG center aligned grid">
+                        <h1 class="ui header center aligned">
+                            <div class="content">SHINY</div>
+                        </h1>
+                        <div id="shiny" class="ui vertical stripe segment">
+                            <div id="shinyCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- 輪播指標 -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#shinyCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#shinyCarousel" data-slide-to="1"></li>
+                                </ol>
+                                <!-- 輪播照片 -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <a>
+                                            <img class="ui fluid rounded image"
+                                                src="./assets/image/introduce/shiny/shiny - 1.jpg" alt="leaflet">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a>
+                                            <img class="ui fluid rounded image"
+                                                src="./assets/image/introduce/shiny/shiny - 2.jpg" alt="leaflet">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 輪播左右箭頭 -->
+                                <a id="carouselAngle" class="left carousel-control" href="#shinyCarousel" role="button"
+                                    data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a id="carouselAngle" class="right carousel-control" href="#shinyCarousel" role="button"
+                                    data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <p>
+                            利用Shiny將資料呈現，並加入互動式卷軸，可提供給使用者更多
+                            的選擇，增加點選的便利性和資料顯示的多樣性，並且美化版面，
+                            使網站選單有詳細分配，以供查詢。
+                        </p>
+                    </div>
+
+                </div>
+
+                <div id="platform" class="ui center aligned grid">
+                    <div class="introduceImg">
+                        <img class="ui centered big image" src="./assets/image/introduce/platform.png" alt="introduce">
+                    </div>
+                    <div class="ui vertical segment">
+                        <img class="ui image banner_rule" src="./assets/image/introduce/網站圖.jpg" alt="架構圖">
+                    </div>
+
+                    <button class="massive positive ui button">點此進入網頁</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer" class="ui vertical footer segment mainColorBg">
+            <div class="ui center aligned container">
+                <div class="ui middle aligned">
+                    <h3 class="ui center aligned header">Shiny登革熱環境因素呈現介面</h3>
+                    <h3 class="ui center aligned header">
+                        Copyright © Shiny登革熱環境因素呈現介面
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </body>
 
 </html>
