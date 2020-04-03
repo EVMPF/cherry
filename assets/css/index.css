@@ -77,6 +77,10 @@
     background-color: #F4E7C7;
 }
 
+#study div{
+    width: 70%;
+}
+
 .segmentBG {
     background-color: #D9F2ED !important;
     border-radius: 30px !important;
@@ -135,6 +139,24 @@
 
 /* introduce */
 
+#chartImg{
+    width: 80% !important;
+}
+
+#dataDiv{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#kitDiv{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#introduce h1 .content{
+    white-space: nowrap;
+}
+
 .introduceImg {
     margin: 5%;
 }
@@ -175,6 +197,16 @@
 
 #platform {
     padding: 2rem;
+    width: 80%;
+}
+
+#platform button{
+    color: #000000;
+    background-color: #C2D5E8;
+}
+
+#platform button:hover{
+    background-color: rgb(217, 228, 240) !important;
 }
 
 /* footer */
@@ -221,5 +253,8 @@
     }
     .segmentBG p {
         font-size: 1.3rem !important;
+    }
+    #platform{
+        width: 100%;
     }
 }
