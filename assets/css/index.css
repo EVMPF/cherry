@@ -77,7 +77,7 @@
     background-color: #F4E7C7;
 }
 
-#study div{
+#study>div>div{
     width: 70%;
 }
 
